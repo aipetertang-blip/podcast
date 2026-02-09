@@ -30,3 +30,4 @@ You must provide YouTube API OAuth credentials once.
 
 ## Notes
 - Without OAuth credentials, generation works but upload cannot be fully automated.
+- YouTube upload requires a video container. Audio is wrapped into an MP4 using `make_podcast_video.py` before upload.
