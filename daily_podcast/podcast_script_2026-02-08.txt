@@ -1,0 +1,51 @@
+[Intro music]
+
+**Host 1 (Maya):** Welcome back to the Daily Crypto Podcast. I’m Maya.
+
+**Host 2 (Jon):** And I’m Jon. Today is February 8th, 2026, and we’re unpacking the biggest crypto stories shaping markets right now — from violent price action and ETF rotations to regulation and security risk.
+
+**Maya:** Quick reminder: this is market commentary, not financial advice. Let’s get into it.
+
+**Jon:** First headline: crypto volatility is still running hot. Over the past few sessions, Bitcoin has swung hard around the $70,000 zone after a sharp drop and partial rebound. Reuters coverage across Feb 5 to Feb 7 highlighted how quickly macro stress spilled into crypto, and how thin liquidity can amplify moves.
+
+**Maya:** And that matters because this isn’t just about one candle or one scary day. We’re seeing what happens when leverage, macro uncertainty, and fragile sentiment all collide at once. If you’re managing risk, this is a regime where position sizing probably matters more than prediction.
+
+**Jon:** Exactly. Second big theme: the market’s broader drawdown. Reuters noted that total crypto market value is still down massively from peak levels — roughly in the neighborhood of two trillion dollars off prior highs, even with rebound attempts.
+
+**Maya:** Translation: confidence hasn’t fully repaired. Rallies can be real, but if participation is narrow and liquidity is patchy, we can still get these boom-bust intraday structures. So this is not a “set and forget” tape.
+
+**Jon:** Third headline, and this one is super important for positioning: ETF flow divergence. A CoinDesk report citing SoSoValue data showed spot Bitcoin ETFs recording notable net outflows on Feb 3 — while ether- and XRP-linked products posted net inflows.
+
+**Maya:** That’s a subtle but powerful signal. It suggests investors may be rotating within crypto risk instead of exiting completely. If that trend continues, relative-value trades between majors could stay in focus — especially if BTC remains more macro-sensitive in the short term.
+
+**Jon:** Fourth: derivatives are still flashing stress. CoinDesk’s Feb 5 market report described more than $800 million in leveraged liquidations over 24 hours at one point, with fear gauges hitting extreme levels.
+
+**Maya:** And when forced liquidations become the dominant flow, price can disconnect from fundamentals in the short run. You can get rapid, emotion-driven moves where support and resistance levels break simply because margin calls force the market’s hand.
+
+**Jon:** So for active traders, the checklist stays the same: funding rates, open interest, options skew, and spot-market depth. If those stay fragile, expect continuation risk.
+
+**Maya:** Let’s pivot to regulation. We saw fresh discussion around SEC and CFTC coordination — often referred to as “Project Crypto” in recent reporting. The key idea is harmonizing oversight and reducing the long-running ambiguity around which assets are treated as securities versus commodities.
+
+**Jon:** If this actually turns into clear rule-making, it could be one of the most structurally bullish developments for U.S. market participation. Clarity can lower compliance friction for exchanges, issuers, and institutions sitting on the sidelines.
+
+**Maya:** But, and it’s a big but, markets will want actual text and timelines, not just speeches. Crypto has seen “framework optimism” before. The difference-maker will be implementation.
+
+**Jon:** Last two quick hits. One: stablecoin scrutiny is back in focus after reports around Tether’s fundraising narrative and valuation expectations. Even if the headlines are mostly optics, stablecoins are systemically important plumbing now — so confidence and transparency here matter a lot.
+
+**Maya:** Two: cybersecurity remains a heavy overhang. Multiple outlets this week cited January losses near $370 million tied to hacks, exploits, and phishing. Different datasets vary, but the direction is clear: attack pressure is not easing.
+
+**Jon:** Which means due diligence isn’t optional. For users: hardware wallets, strict signing habits, and less blind trust in random links. For projects: better auditing, monitoring, and incident response.
+
+**Maya:** Alright, let’s wrap with what we’re watching next.
+
+**Jon:** Number one: can Bitcoin hold and build above key reclaimed levels, or do we revisit lower supports? Number two: do ETF flows continue rotating away from BTC and into ETH/XRP products? Number three: do derivatives metrics normalize, or keep signaling stress?
+
+**Maya:** And number four: does policy progress move from narrative to formal guidance? If yes, that could shift medium-term valuations.
+
+**Jon:** That’s it for today’s Daily Crypto Podcast.
+
+**Maya:** If this helped, share it with one friend who follows crypto and wants signal over noise.
+
+**Jon:** Thanks for listening — and we’ll see you tomorrow.
+
+[Outro music]
