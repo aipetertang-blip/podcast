@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import json
 import random
 import re
 import subprocess
@@ -73,6 +74,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--script", required=True, help="Path to script txt with Host A:/Host B: lines")
     ap.add_argument("--out", required=True, help="Output MP3 path")
+    ap.add_argument("--timeline", help="Optional output JSON path for subtitle timeline")
     ap.add_argument("--voice-a", default="en-US-AndrewNeural")
     ap.add_argument("--voice-b", default="en-US-JennyNeural")
     ap.add_argument("--rate-a", default="+3%")
@@ -86,10 +88,13 @@ def main():
     parts = parse_script(script_text)
 
     rng = random.Random(42)
+    timeline = []
 
     with tempfile.TemporaryDirectory(prefix="two-host-tts-") as td:
         temp_dir = Path(td)
         clips = []
+        t_cursor = 0.0
+
         for i, (speaker, text) in enumerate(parts):
             seg = temp_dir / f"seg_{i:04d}.mp3"
             jitter = rng.choice([-1, 0, 1])
@@ -104,11 +109,26 @@ def main():
                 pitch = args.pitch_b
                 tts_segment(text, args.voice_b, seg, rate, pitch)
 
-            clips.append(AudioFileClip(str(seg)))
-            clips.append(make_silence(pause_for_line(text, args.pause)))
+            seg_clip = AudioFileClip(str(seg))
+            seg_duration = float(seg_clip.duration)
+            gap = pause_for_line(text, args.pause)
+
+            timeline.append({
+                "speaker": speaker,
+                "text": text,
+                "start": round(t_cursor, 3),
+                "end": round(t_cursor + seg_duration, 3),
+            })
+
+            clips.append(seg_clip)
+            clips.append(make_silence(gap))
+            t_cursor += seg_duration + gap
 
         final = concatenate_audioclips(clips)
         final.write_audiofile(args.out, fps=24000)
+
+        if args.timeline:
+            Path(args.timeline).write_text(json.dumps(timeline, ensure_ascii=False, indent=2), encoding="utf-8")
 
         for c in clips:
             c.close()
