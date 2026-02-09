@@ -5,7 +5,8 @@
   - hot-topics brief
   - 2-host podcast script (~5 min)
   - YouTube package (title/description/tags)
-  - TTS audio
+  - dual-voice audio + upload (English)
+  - Chinese version (same core content) + upload
 
 ## To enable fully automated YouTube upload
 You must provide YouTube API OAuth credentials once.

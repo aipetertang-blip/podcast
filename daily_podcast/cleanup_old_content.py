@@ -12,6 +12,8 @@ def should_delete(path: Path) -> bool:
         "youtube_token.json",
         "youtube_uploader.py",
         "make_podcast_video.py",
+        "render_two_host_audio.py",
+        "cleanup_old_content.py",
         "automation_setup.md",
         "project_context.md",
         "youtube_upload_config.example.json",
@@ -19,8 +21,18 @@ def should_delete(path: Path) -> bool:
     if name in keep_exact:
         return False
 
-    delete_ext = {".mp3", ".mp4", ".wav", ".m4a", ".png", ".txt", ".md"}
-    return path.suffix.lower() in delete_ext and name.startswith("daily_podcast_") or name.startswith("cover")
+    delete_ext = {".mp3", ".mp4", ".wav", ".m4a", ".png", ".txt", ".md", ".json"}
+    generated_prefixes = (
+        "daily_podcast_",
+        "podcast_script_",
+        "hot_topics_brief_",
+        "youtube_metadata_",
+    )
+
+    if name.startswith("cover"):
+        return True
+
+    return path.suffix.lower() in delete_ext and any(name.startswith(p) for p in generated_prefixes)
 
 
 def main():
