@@ -9,10 +9,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube.readonly",
-]
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 BASE_DIR = "/home/ttang/.openclaw/workspace/daily_podcast"
 CLIENT_SECRET = os.path.join(BASE_DIR, "google_oauth_client.json")
 TOKEN_FILE = os.path.join(BASE_DIR, "youtube_token.json")
