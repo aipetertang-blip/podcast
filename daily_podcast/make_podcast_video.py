@@ -81,7 +81,7 @@ def _subtitle_image(path: Path, text: str, speaker: str, width=1100, height=130)
     speaker_font = _load_font(34, bold=True)
     text_font = _load_font(40, bold=True)
 
-    label = "A:" if speaker == "A" else "B:"
+    label = "Tony:" if speaker == "A" else "Kimmi:"
     d.text((28, 16), label, fill=speaker_color, font=speaker_font)
 
     wrapped = _wrap_text(d, text, text_font, width - 120)[:2]

@@ -9,8 +9,8 @@ from pathlib import Path
 
 from moviepy import AudioFileClip, AudioClip, concatenate_audioclips
 
-HOST_A_RE = re.compile(r"^\s*(Host\s*A)\s*:\s*(.+)$", re.IGNORECASE)
-HOST_B_RE = re.compile(r"^\s*(Host\s*B)\s*:\s*(.+)$", re.IGNORECASE)
+HOST_A_RE = re.compile(r"^\s*(Host\s*A|Tony)\s*:\s*(.+)$", re.IGNORECASE)
+HOST_B_RE = re.compile(r"^\s*(Host\s*B|Kimmi)\s*:\s*(.+)$", re.IGNORECASE)
 
 
 def parse_script(script_text: str):
@@ -28,7 +28,7 @@ def parse_script(script_text: str):
             parts.append(("B", mb.group(2).strip()))
             continue
     if not parts:
-        raise ValueError("No lines found with 'Host A:' / 'Host B:' labels")
+        raise ValueError("No lines found with 'Tony:'/'Kimmi:' (or Host A/Host B) labels")
     return parts
 
 
