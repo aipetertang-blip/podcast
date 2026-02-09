@@ -1,0 +1,9 @@
+{
+  "channel_name": "YOUR_CHANNEL_NAME",
+  "privacy_status": "public",
+  "category_id": "28",
+  "default_tags": ["crypto", "bitcoin", "ethereum", "web3"],
+  "made_for_kids": false,
+  "publish_immediately": true,
+  "local_output_dir": "/home/ttang/.openclaw/workspace/daily_podcast/output"
+}
